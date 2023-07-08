@@ -3,6 +3,16 @@
 ## Introduction
 This documentation provides an overview of the API endpoint located at `http://127.0.0.1:5000/`. The endpoint accepts query parameters to filter and paginate data. The supported query parameters are `author_name`, `limit`, and `offset`.
 
+
+## Installation
+```
+git clone https://github.com/imerfanahmed/BUETFEST-Hackathon-Book-API
+
+cd BUETFEST-Hackathon-Book-API
+composer install
+```
+
+
 ## Starting the PHP Server
 
 To use this API endpoint, you can start a PHP server locally by following these steps:
