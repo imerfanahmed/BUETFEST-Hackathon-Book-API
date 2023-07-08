@@ -5,10 +5,11 @@ if (!isset($_GET['author_name']) or $_GET['author_name']=='' ){
     //response invalid parameter
     $response = [
         'status' => '400',
-        'message' => 'Invalid parameter',
+        'message' => 'Invalid parameter, `author_name` is required',
     ];
     header('HTTP/1.1 400 Bad Request');
     echo json_encode($response);
+    exit();
 }
 
 $author_name =  $_GET['author_name'];

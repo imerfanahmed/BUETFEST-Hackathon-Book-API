@@ -103,8 +103,9 @@ The API endpoint returns a JSON response containing the requested data based on 
 
 - **Explanation:**
     - The `data` field contains an array of articles that match the provided `author_name` parameter. The number of articles returned depends on the `limit` parameter, and the starting point is determined by the `offset` parameter.
-    - Each article object within the `data` array includes an `id`, `title`, and `author` field.
-    - The `total_count` field represents the total number of articles available that match the provided `author_name` parameter.
+    - Each article object within the `data` array includes an `id` and `title` field.
+    - The `paginate` object consist of current `limit`, `offset` data and
+    `self`,`next`,`prev` URL
 
 ### Error Response
 - **HTTP Status Code:** 400 Bad Request
